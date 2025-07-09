@@ -21,7 +21,7 @@ public class EmployeeJDBC {
         String sql = "INSERT INTO employee (id, name, department) VALUES (?, ?, ?)";
 
         try (
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", "root", "Harsh@12345678");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", USER, PASSWORD);
                 PreparedStatement stmt = conn.prepareStatement(sql);
         ) {
             stmt.setInt(1, emp.getId());
@@ -39,7 +39,7 @@ public class EmployeeJDBC {
         String sql = "SELECT * FROM employee";
 
         try (
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", "root", "Harsh@12345678");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", USER, PASSWORD);
                 Statement stmt = conn.createStatement();
                 ResultSet rs = stmt.executeQuery(sql);
         ) {
@@ -59,7 +59,7 @@ public class EmployeeJDBC {
         String sql = "UPDATE employee SET name = ?, department = ? WHERE id = ?";
 
         try (
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", "root", "Harsh@12345678");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", USER, PASSWORD);
                 PreparedStatement stmt = conn.prepareStatement(sql);
         ) {
             stmt.setString(1, name);
@@ -77,7 +77,7 @@ public class EmployeeJDBC {
         String sql = "DELETE FROM employee WHERE id = ?";
 
         try (
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", "root", "Harsh@12345678");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Week3HW_DB", USER, PASSWORD);
                 PreparedStatement stmt = conn.prepareStatement(sql);
         ) {
             stmt.setInt(1, id);
