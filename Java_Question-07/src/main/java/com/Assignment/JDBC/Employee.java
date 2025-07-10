@@ -1,9 +1,6 @@
 package com.Assignment.JDBC;
 
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
+
 
 public class Employee {
     private int id;
