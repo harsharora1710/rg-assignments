@@ -1,7 +1,7 @@
-package com.javatechie.spring.batch.repository;
+package com.Assignment.spring.batch.repository;
 
-import com.javatechie.spring.batch.entity.Customer;
+import com.Assignment.spring.batch.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomerRepository  extends JpaRepository<Customer,Integer> {
+public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 }

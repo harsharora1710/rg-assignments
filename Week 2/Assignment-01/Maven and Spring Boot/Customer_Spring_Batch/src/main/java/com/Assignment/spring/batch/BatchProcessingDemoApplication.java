@@ -1,4 +1,4 @@
-package com.javatechie.spring.batch;
+package com.Assignment.spring.batch;
 
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;

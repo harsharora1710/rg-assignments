@@ -1,4 +1,4 @@
-package com.javatechie.spring.batch.controller;
+package com.Assignment.spring.batch.controller;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
@@ -28,7 +28,8 @@ public class JobController {
                 .addLong("startAt", System.currentTimeMillis()).toJobParameters();
         try {
             jobLauncher.run(job, jobParameters);
-        } catch (JobExecutionAlreadyRunningException | JobRestartException | JobInstanceAlreadyCompleteException | JobParametersInvalidException e) {
+        } catch (JobExecutionAlreadyRunningException | JobRestartException | JobInstanceAlreadyCompleteException
+                | JobParametersInvalidException e) {
             e.printStackTrace();
         }
     }

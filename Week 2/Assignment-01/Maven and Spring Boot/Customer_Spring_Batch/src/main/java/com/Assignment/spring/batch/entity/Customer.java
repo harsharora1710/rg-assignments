@@ -1,4 +1,4 @@
-package com.javatechie.spring.batch.entity;
+package com.Assignment.spring.batch.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -33,6 +33,5 @@ public class Customer {
     private String country;
     @Column(name = "DOB")
     private String dob;
-
 
 }
